@@ -1,0 +1,10 @@
+# Eclipse-specific files
+.classpath
+.project
+.settings/
+
+# Compiled class files
+*.class
+
+# Output folder (if you're using /bin)
+bin/
