@@ -1,4 +1,4 @@
-package dsa.basics;
+package dsa.patterns;
 import java.util.*;
 
 public class PatternAdvance2 {
