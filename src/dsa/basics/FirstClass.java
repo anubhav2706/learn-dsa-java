@@ -15,7 +15,7 @@ public class FirstClass {
 		int sum = a + b;
 		System.out.print("The sum of two entered numbers: "+ a + " + " + b + " = " + sum);
 		
-		
+		sc.close();
 
 	}
 
