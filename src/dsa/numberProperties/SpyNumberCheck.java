@@ -1,4 +1,4 @@
-package numberPropeties;
+package dsa.numberProperties;
 
 import java.util.Scanner;
 
