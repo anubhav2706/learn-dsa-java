@@ -2,6 +2,8 @@ package dsa.basics;
 
 import java.util.Scanner;
 
+// A Binary Gap is the longest sequence of consecutive 0s surrounded by 1s in the binary representation of a number.
+
 public class BinaryGap {
 
     // Function to find the longest binary gap
