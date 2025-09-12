@@ -1,4 +1,4 @@
-package dsa.basics;
+package dsa.basics.conversionProblems;
 
 import java.util.Scanner;
 
