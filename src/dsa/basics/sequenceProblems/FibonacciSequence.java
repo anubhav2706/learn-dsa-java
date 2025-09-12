@@ -1,4 +1,4 @@
-package dsa.basics;
+package dsa.basics.sequenceProblems;
 import java.util.Scanner;
 
 public class FibonacciSequence {
