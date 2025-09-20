@@ -1,10 +1,10 @@
-package dsa.numberProperties;
+package dsa.basics.specialNumbers;
 
 import java.util.Scanner;
 
-public class StrongNumberCheck {
+public class PetersonNumber {
 
-    // Method to calculate factorial of a digit
+    // Function to calculate factorial
     public static int factorial(int n) {
         int fact = 1;
         for (int i = 1; i <= n; i++) {
@@ -13,9 +13,9 @@ public class StrongNumberCheck {
         return fact;
     }
 
-    // Method to check strong number
-    public static boolean isStrongNumber(int num) {
-        int sum = 0, temp = num;
+    // Function to check Peterson Number
+    public static boolean isPeterson(int n) {
+        int temp = n, sum = 0;
 
         while (temp > 0) {
             int digit = temp % 10;
@@ -23,20 +23,19 @@ public class StrongNumberCheck {
             temp /= 10;
         }
 
-        return sum == num;
+        return sum == n;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int n = sc.nextInt();
 
-        if (isStrongNumber(num)) {
-            System.out.println(num + " is a Strong Number.");
-        } else {
-            System.out.println(num + " is NOT a Strong Number.");
-        }
+        if (isPeterson(n))
+            System.out.println(n + " → Peterson Number");
+        else
+            System.out.println(n + " → Not a Peterson Number");
 
         sc.close();
     }
