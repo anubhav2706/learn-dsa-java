@@ -1,4 +1,4 @@
-package dsa.numberProperties;
+package dsa.basics.specialNumbers;
 
 import java.util.Scanner;
 
