@@ -1,10 +1,10 @@
-package dsa.basics;
+package dsa.basics.specialNumbers;
 
 import java.util.Scanner;
 
-public class TwistedPrime {
+public class EmirpNumber {
 
-    // check if a number is prime
+    // check if prime
     public static boolean isPrime(int n) {
         if (n < 2) return false;
         for (int i = 2; i * i <= n; i++) {
@@ -23,11 +23,11 @@ public class TwistedPrime {
         return rev;
     }
 
-    // check twisted prime
-    public static boolean isTwistedPrime(int n) {
+    // check emirp
+    public static boolean isEmirp(int n) {
         if (!isPrime(n)) return false;
         int rev = reverse(n);
-        return isPrime(rev);
+        return (rev != n && isPrime(rev));
     }
 
     public static void main(String[] args) {
@@ -36,10 +36,10 @@ public class TwistedPrime {
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
 
-        if (isTwistedPrime(num))
-            System.out.println(num + " → Twisted Prime (both " + num + " and " + reverse(num) + " are prime)");
+        if (isEmirp(num))
+            System.out.println(num + " → ✅ Emirp (prime & reverse " + reverse(num) + " is also prime)");
         else
-            System.out.println(num + " → Not a Twisted Prime");
+            System.out.println(num + " → ❌ Not Emirp");
 
         sc.close();
     }
