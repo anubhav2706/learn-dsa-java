@@ -1,4 +1,4 @@
-package dsa.basics;
+package dsa.basics.mathematicalOperation;
 
 import java.util.Scanner;
 
